@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <title>Library</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header class="header"> 
+             <nav class="navbar" style="background: rgba(255, 255, 255, 1)">
+                <div class="container nav-container" style="max-width: 1232px">
+                    <div class="nav__logo"> 
+                        <img src="./img/logo.png" alt="logo"> 
+                    </div>
+                    <div class="nav__inputs-wrapper"> 
+                        <select defaultValue="English" class="btn btn-light" style="width: 130px; height: 38px; margin-right: 10px; color: #c0baba"> 
+                            <option value="English"> 🇬🇧 English </option> 
+                            <option value="Ukraine"> Ukraine </option> 
+                        </select>
+                        <select  defaultValue="usd" class="btn btn-light" style="width: 80px; height: 38px; color: #c0baba"> 
+                            <option value="USD">USD</option> 
+                            <option value="EUR">EUR</option> 
+                        </select>
+                    </div>
+                </div>
+             </nav>
+    </header>
+
+    <div class="container-lg container-sm mt-5 px-5 main-container">
+        <form>
+        <div class="content__form row ">
+                <div class="row mb-2 main-row" >
+                    <!-- Billing-info-form -->
+                    <div class="row">
+                        <div class="col-lg-5 me-1 left-form-billing" >
+
+                            <h3 class="title" style="color: #FFF; font-size: 18px">Billing Information 
+                                <span class="custom-sign badge rounded-circle p-2" style="">?</span>
+                            </h3>
+                            <label style="color: #FFF; font-size: 12px; margin-bottom: 15px; display: flex; align-items:center" value="Business purchase"> 
+                                <input type="checkbox" class="real-checkbox"> <span class="custom-checkbox"></span>Business purchase 
+                            </label>
+
+                            <div class="input-group input-group-sm  mb-2">
+                                <input class="form-control" id="email" name="email" required="" placeholder="E-mail *" style="border-radius: 7px">
+                            </div>
+                            <div class="input-group input-group-sm  mb-2">
+                                <input class="form-control" required="" name="name" placeholder="First name *" style="margin-right: 14px; border-radius: 7px">
+                                <input class="form-control" required="" name="last name"placeholder="Last name *" style="border-radius: 7px">
+                            </div>
+                            <div class="input-group input-group-sm  mb-2">
+                                <select class="btn btn-light text-start" value="Ukraine" style="width: 100%; border-radius: 7px; color: #444444"> 
+                                    <option value="Ukraine">Ukraine</option> 
+                                    <option value="Poland">Poland</option> 
+                                    <option value="USA">USA</option> 
+                                </select>
+                            </div>
+                            <div class="input-group input-group-sm  mb-2 input-sign">
+                                <input class="form-control" name="phone" placeholder="Phone number" style="border-radius: 7px;">
+                                <span class="custom-sign custom-sign position-absolute top-50 translate-middle badge rounded-circle p-2" style="left: 96%">?</span>
+                            </div>
+                            <hr class="mt-3 mb-3" style="color: #B6D9FD">
+
+                            <div class="d-flex justify-content-between mb-2 ">
+
+                                    <input class="radio btn-check" type="radio" id='visa' name="radio" autocomplete="off">
+                                    <label class="btn btn-light" for="visa" style="width: 100%; height: 42px; margin-right: 15px;">
+                                        <img src="./img/visa-mc 3.svg">
+                                    </label>
+
+                                    <input class="radio btn-check" type="radio" name="radio" id="paypal" autocomplete="off">
+                                    <label class="btn btn-light btn-radio" for="paypal" style="width: 100%; height: 42px">
+                                        <img src="./img/paypal.svg">
+                                    </label>
+                                </div>
+
+                            <div class="input-group input-group-sm mb-2">
+                                <input class="form-control" required="" name="card number" placeholder="Card number *" style="border-radius: 7px">
+                            </div>
+
+                            <div class="row select-wrapper">
+                                <div class="col-3 " >
+                                        <select class=""  aria-expanded="false" style="max-width: 65px; border-radius: 7px; background:#FFF; padding: 7px 10px 7px 10px" >
+                                        <!-- <select class="btn btn-light"  aria-expanded="false" style="max-width: 65px; border-radius: 7px"> -->
+                                            <option value="01">01</option>
+                                            <option value="02">02</option>
+                                            <option value="03">03</option>
+                                            <option value="04">04</option>
+                                            <option value="05">05</option>
+                                            <option value="06">06</option>
+                                            <option value="07">07</option>
+                                            <option value="08">08</option>
+                                            <option value="09">09</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                        </select>
+                                    
+                                </div>
+                                <div class="col-3">
+                                    <!-- <select class="btn btn-light" style="max-width: 65px;"> -->
+                                    <select class="" style="max-width: 65px; border-radius: 7px; background:#FFF; padding: 7px 10px 7px 10px">
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6 col-6 input-sign position-relative" style="min-width: 148px" >
+                                    <input type="text" class="form-control " required="" name="CVC" placeholder="Security code *" style="padding: 0.27rem 0.75rem;">
+                                    <span class="custom-sign position-absolute top-50 translate-middle badge rounded-circle p-2" style="left: 80%">?</span>
+                                </div>
+                            </div>
+                        
+                        </div>
+
+                        <!-- Product-info -->
+                        <div class="col-lg-4" >
+                            <div class="row">
+                                <div class="title-product" style="margin-bottom: 32px">
+                                    <h3 style="color: #FFF; font-size: 18px">You’re Buying</h3>
+                                </div>
+                                    <div class="card" style="padding:0">
+                                        <div class="row" style="margin: 7px 0 0 0">
+                                            <div class="col-3">
+                                                <div class="col"><img src="./img/logo product.png" alt="product"></div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="d-block">
+                                                    <div class="col" ><span style="font-size: 14px; margin-bottom: 0;">Test Product</span></div>
+                                                    <div class="col"><a href="/" style="font-size: 13px; color: #1473E6;">Auto-renewal</a></div>
+                                                    <div class="col"><span style="font-size: 13px; color: #838993">100.00 USD /per 1 Month</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr class=" mt-1" style="color: #B6D9FD">
+                                            <div class="row m-1">
+                                                <div class="col d-flex justify-content-between">
+                                                    <span style="font-size: 13px; color:#1473E6">VAT (20%):</span>
+                                                    <span style="font-size: 13px">20.00 USD</span>
+                                                </div>
+                                            </div>  
+                                            <div class="row ms-1 me-1 mb-1">
+                                                <div class="col d-flex justify-content-between">
+                                                    <span style="font-size: 21px">TOTAL:</span>
+                                                    <span style="font-size: 21px">120.00 USD</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-lg-2 col-12 form-btn-wrapper">
+                            <button class="btn form-btn" id="btn">Submit order</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+                <div class="row">
+                    <div class="container col-lg-8">
+                        <div class="col-7 mt-4 m-auto" >
+                            <img src="./img/certificates.png" class="">
+                        </div>
+                    
+                        <div class="col-lg-12 col-11 mt-4 m-auto text-center botom-widgets">
+                            <p>By submitting your Order, you acknowledge that you are purchasing from PayPro Global (PayPro Global, Inc., PayPro Europe Limited or PayPro U.S. Inc.), an authorized e-Commerce reseller.</p>
+                            <p>Once the transaction is complete, your contact information will be shared with the product vendor for ongoing support purposes.</p>
+                            <p>24/7 English phone support for online payment related issues:</p>
+                            <p> <span class="fw-bold">+ 1-888-317-4868</span> (Toll free) <br>
+                                <span class="fw-bold">+ 1-647-977-7769</span> (International)</p>
+                            <p>Do not hesitate to contact our CUSTOMER CARE CENTER for more information about payment and delivery. 
+                                Please state the order ID from the confirmation email as a reference so that we can assist you efficiently.</p>
+                            <p>© PayPro Global, Inc. 2021</p>
+                            <p><a>Privacy Policy</a> | <a>Terms and Conditions </a>| <a>Policy</a> </p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+   
+    
+    
+    <script src='./js/main.js'></script>
+</body>
+</html>
